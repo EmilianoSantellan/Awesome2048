@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, PanResponder, LayoutAnimation, NativeModules } from 'react-native';
+import { View, ImageBackground, PanResponder, LayoutAnimation, NativeModules } from 'react-native';
 
 var {
     UIManager,
@@ -114,12 +114,14 @@ class Container extends React.Component<GameProps, State> {
         var tiles = this.state.tiles ? this.state.tiles : [];
         var _self = this;
         return (
-            <View {...this._panResponder.panHandlers} style={styles.container} >
-                <Heading score={this.state.score} best={this.state.best}></Heading>
-                <AboveGame onRestart={() => _self.restart()}></AboveGame>
-                <GameContainer size={this.state.size} tiles={this.state.tiles} won={this.state.won} over={this.state.over}
-                    onKeepGoing={() => _self.keepGoing()} onTryAagin={() => _self.restart()}>
-                </GameContainer>
+            <View {...this._panResponder.panHandlers} style={styles.container}>
+                <ImageBackground source={require('../../assets/images/background.png')} resizeMode="cover" style={styles.image}>
+                    <Heading score={this.state.score} best={this.state.best}></Heading>
+                    <AboveGame onRestart={() => _self.restart()}></AboveGame>
+                    <GameContainer size={this.state.size} tiles={this.state.tiles} won={this.state.won} over={this.state.over}
+                        onKeepGoing={() => _self.keepGoing()} onTryAagin={() => _self.restart()}>
+                    </GameContainer>
+                </ImageBackground>
             </View>
         );
     }

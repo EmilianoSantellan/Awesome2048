@@ -15,11 +15,11 @@ class GameMessage extends React.Component<MessageProps, {}> {
         if (this.props.won) {
             return (
                 <View style={styles.row}>
-                    <Text style={styles.won}>You win!</Text>
+                    <Text style={styles.won}>¡Felicidades, acabas de ganar!</Text>
                     <View style={styles.lower}>
                         <TouchableWithoutFeedback onPress={this.props.onKeepGoing}>
                             <View style={styles.keepGoingContainer}>
-                                <Text style={styles.keepGoing}>Keep going</Text>
+                                <Text style={styles.keepGoing}>Sigue adelante</Text>
                             </View>
                         </TouchableWithoutFeedback>
                     </View>
@@ -33,7 +33,7 @@ class GameMessage extends React.Component<MessageProps, {}> {
                     <View style={styles.lower}>
                         <TouchableWithoutFeedback onPress={this.props.onTryAagin}>
                             <View style={styles.tryAgainContainer}>
-                                <Text style={styles.tryAgain}>Try again</Text>
+                                <Text style={styles.tryAgain}>Intentar otra vez</Text>
                             </View>
                         </TouchableWithoutFeedback>
                     </View>

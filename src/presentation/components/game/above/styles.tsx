@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
         marginRight: Dimensions.size["4"],
     },
     text: {
-        color: '#776E65',
+        color: '#D5E4CF',
         fontSize: Dimensions.size["6"],
         lineHeight: Dimensions.size["8"],
     },
@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     newGameContainer: {
-        backgroundColor: '#8f7a66',
+        backgroundColor: '#ABD19C',
         paddingHorizontal: Dimensions.size["4"],
         paddingVertical: Dimensions.size["4"],
         borderRadius: Dimensions.size["2"],

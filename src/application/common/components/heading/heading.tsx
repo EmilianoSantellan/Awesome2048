@@ -5,14 +5,14 @@ import { styles } from './styles';
 const Heading = (props: any) => {
     return (
         <View style={styles.heading}>
-            <Text style={styles.headingTitle}>2048</Text>
+            <Text style={styles.headingTitle}>Space X</Text>
             <View style={styles.scores}>
-                <View style={styles.container}>
-                    <Text style={styles.containerTitle}>SCORE</Text>
+                <View style={[styles.container, styles.containerScores]}>
+                    <Text style={styles.containerTitle}>PUNTAJE</Text>
                     <Text style={styles.containerValue}>{props.score}</Text>
                 </View>
-                <View style={styles.container}>
-                    <Text style={styles.containerTitle}>BEST</Text>
+                <View style={[styles.container, styles.containerBest]}>
+                    <Text style={styles.containerTitle}>MEJOR</Text>
                     <Text style={styles.containerValue}>{props.best}</Text>
                 </View>
             </View>

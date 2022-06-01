@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     container: {
         width: width - Dimensions.size["10"],
         height: width - Dimensions.size["10"],
-        backgroundColor: '#bbada0',
+        // backgroundColor: '#484156',
         borderRadius: Dimensions.size["2"],
         marginTop: Dimensions.size["12"],
     }

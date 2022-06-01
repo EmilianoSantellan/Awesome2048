@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     },
     headingTitle: {
         fontSize: Dimensions.size["12"],
-        color: '#776E65',
+        color: '#FCFBF7',
         fontWeight: 'bold'
     },
     scores: {
@@ -29,6 +29,12 @@ export const styles = StyleSheet.create({
         marginLeft: Dimensions.size["2"],
         flexDirection: 'column',
         alignItems: 'center',
+    },
+    containerScores: {
+        backgroundColor: '#E4885C'
+    },
+    containerBest: {
+        backgroundColor: '#8AC8C1'
     },
     containerTitle: {
         color: '#eee4da',

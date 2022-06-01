@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
         width: ITEM_WIDTH,
         height: ITEM_WIDTH,
         marginHorizontal: MARGIN_WIDTH,
-        backgroundColor: 'rgba(238, 228, 218, 0.35)',
+        backgroundColor: 'rgba(56, 50, 66, 0.35)',
         borderRadius: Dimensions.size["1"]
     }
 });
